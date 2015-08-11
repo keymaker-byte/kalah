@@ -1,5 +1,5 @@
 #Kalah Java
-A Java library that models the Kahala game (https://en.wikipedia.org/wiki/Kalah).
+A Java library that models the Kalah game (https://en.wikipedia.org/wiki/Kalah).
 
 ## How to use it
 The game can be instantiated using one of the available modes (3-seed, 4-seed or 6-seed)
