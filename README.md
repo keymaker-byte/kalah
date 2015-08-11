@@ -6,7 +6,7 @@ The game can be instantiated using one of the available modes (3-seed, 4-seed or
 ```
 KalahGame game = new KalahGame(KalahMode.STONES_3);
 ```
-then start the game when ready:
+Then start the game when ready:
 ```
 game.start();
 ```
