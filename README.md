@@ -19,6 +19,7 @@ Check the game status aftert every move, they can be:
 * PLAYINGA: player A turn
 * PLAYINGB: player B turn
 * FINISHED: game was finished
+
 When finished retrieve the winner of the game:
 ```
 KalahPlayer winer = game.getWinner();
