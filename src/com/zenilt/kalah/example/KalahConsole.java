@@ -24,7 +24,6 @@ package com.zenilt.kalah.example;
  * THE SOFTWARE.
  */
 import com.zenilt.kalah.KalahGame;
-import static com.zenilt.kalah.KalahGame.PITS;
 import com.zenilt.kalah.KalahMode;
 import com.zenilt.kalah.KalahPit;
 import com.zenilt.kalah.KalahPlayer;
@@ -116,8 +115,10 @@ public class KalahConsole {
 	} else {
 	    String pitsnumbersA = "";
 	    String pitsnumbersB = "";
-	    for (int i = 0; i < PITS; i++) {
+	    for (int i = 0; i < game.getPlayerA().getPits().size(); i++) {
 		pitsnumbersA = pitsnumbersA + String.format("(%d)", i);
+	    }
+	    for (int i = 0; i < game.getPlayerB().getPits().size(); i++) {
 		pitsnumbersB = String.format("(%d)", i) + pitsnumbersB;
 	    }
 	    stream.println(String.format("              %s", pitsnumbersB));

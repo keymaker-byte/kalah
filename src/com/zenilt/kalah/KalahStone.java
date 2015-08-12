@@ -24,6 +24,7 @@
 package com.zenilt.kalah;
 
 /**
+ * Represents a simple stone token.
  *
  * @author Juan Francisco Rodríguez
  */

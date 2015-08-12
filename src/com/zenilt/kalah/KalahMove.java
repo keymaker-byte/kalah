@@ -25,6 +25,8 @@ package com.zenilt.kalah;
 
 /**
  *
+ * Identifies the type of movement performed by a player.
+ *
  * @author Juan Francisco Rodríguez
  */
 public enum KalahMove {

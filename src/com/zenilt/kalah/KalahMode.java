@@ -25,6 +25,8 @@ package com.zenilt.kalah;
 
 /**
  *
+ * Different modes for the game that changes the ammount of stones used per pit.
+ *
  * @author Juan Francisco Rodríguez
  */
 public enum KalahMode {

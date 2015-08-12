@@ -26,6 +26,7 @@ package com.zenilt.kalah;
 import java.util.ArrayList;
 
 /**
+ * Represents one of the players and their side of the board.
  *
  * @author Juan Francisco Rodríguez
  */
@@ -40,12 +41,13 @@ public class KalahPlayer {
      *
      * @param name the name of the player
      * @param mode game mode determines how many stones start at each pit
+     * @param pitsNumber The number of pits the player has
      */
-    public KalahPlayer(String name, KalahMode mode) {
+    public KalahPlayer(String name, KalahMode mode, Integer pitsNumber) {
 	this.name = name;
 	pits = new ArrayList<>();
 	house = new KalahHouse();
-	for (int i = 0; i < KalahGame.PITS; i++) {
+	for (int i = 0; i < pitsNumber; i++) {
 	    KalahPit pit = new KalahPit(mode);
 	    pits.add(pit);
 	}
@@ -67,7 +69,7 @@ public class KalahPlayer {
      * @return
      */
     public KalahPit getPit(Integer pitIndex) {
-	if (pitIndex < 0 || pitIndex >= KalahGame.PITS) {
+	if (pitIndex < 0 || pitIndex >= pits.size()) {
 	    return null;
 	}
 	return pits.get(pitIndex);

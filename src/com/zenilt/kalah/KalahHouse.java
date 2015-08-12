@@ -26,6 +26,7 @@ package com.zenilt.kalah;
 import java.util.ArrayList;
 
 /**
+ * Represents the House or kalah where the players adquire stones.
  *
  * @author Juan Francisco Rodríguez
  */

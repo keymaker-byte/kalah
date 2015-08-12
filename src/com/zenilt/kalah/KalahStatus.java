@@ -24,6 +24,7 @@
 package com.zenilt.kalah;
 
 /**
+ * Identifies the current game status.
  *
  * @author Juan Francisco Rodríguez
  */

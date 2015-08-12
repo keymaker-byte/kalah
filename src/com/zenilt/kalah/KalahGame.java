@@ -28,14 +28,25 @@ import com.zenilt.kalah.exception.KalahIlegalMoveException;
 import java.util.LinkedList;
 
 /**
+ * This is the main class used to instantiate the game.
+ *
+ * Call start() when ready to play.
+ *
+ * Use move(Integer pitIndex) to input the players' movements.
+ *
+ * Checkout getStatus() to retrieve the game status.
+ *
+ * Checkout getPlayerA() and getPlayerB() to get a representation of each side of the board.
+ *
+ * Use getWinner() to retrieve the game winner.
  *
  * @author Juan Francisco Rodríguez
  */
 public class KalahGame {
 
-    public static final Integer PITS = 6;
-    public static final String NAMEA = "Player A";
-    public static final String NAMEB = "Player B";
+    private static final Integer PITS = 6;
+    private static final String NAMEA = "Player A";
+    private static final String NAMEB = "Player B";
 
     private final KalahPlayer playerA;
     private final KalahPlayer playerB;
@@ -49,8 +60,8 @@ public class KalahGame {
      */
     public KalahGame(KalahMode mode) {
 	this.mode = mode;
-	this.playerA = new KalahPlayer(NAMEA, this.mode);
-	this.playerB = new KalahPlayer(NAMEB, this.mode);
+	this.playerA = new KalahPlayer(NAMEA, this.mode, PITS);
+	this.playerB = new KalahPlayer(NAMEB, this.mode, PITS);
 	this.status = KalahStatus.INIT;
     }
 

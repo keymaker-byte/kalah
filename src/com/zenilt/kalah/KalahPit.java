@@ -28,6 +28,8 @@ import java.util.LinkedList;
 
 /**
  *
+ * Represents the pits of the board.
+ *
  * @author Juan Francisco Rodríguez
  */
 public class KalahPit {
