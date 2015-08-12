@@ -32,19 +32,19 @@ package com.zenilt.kalah;
 public enum KalahMove {
 
     /**
-     * The intented move is illegal
+     * The intended move was illegal
      */
     ILEGAL,
     /**
-     * The intented move was ok, the game must continue
+     * The intended move was ok, the game must continue
      */
     CONTINUE,
     /**
-     * The intented move created a steal situation, the game must continue
+     * The intended move created a steal situation, the game must continue
      */
     STEAL,
     /**
-     * The intented move ended up in the house, the player continues playing
+     * The intended move ended up in the house, the player has an additional turn
      */
     PLAYAGAIN;
 

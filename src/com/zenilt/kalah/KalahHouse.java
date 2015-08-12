@@ -26,7 +26,7 @@ package com.zenilt.kalah;
 import java.util.ArrayList;
 
 /**
- * Represents the House or kalah where the players adquire stones.
+ * Represents the house or kalah where the players accumulate the stones.
  *
  * @author Juan Francisco Rodríguez
  */
@@ -44,7 +44,7 @@ public class KalahHouse {
     /**
      * Gets how many stones are in this house
      *
-     * @return the number of stones in the house
+     * @return the number of stones in this house
      */
     public Integer size() {
 	return stones.size();

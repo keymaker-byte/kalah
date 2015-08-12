@@ -28,7 +28,7 @@ import java.util.LinkedList;
 
 /**
  *
- * Represents the pits of the board.
+ * Represents a pit of the board.
  *
  * @author Juan Francisco Rodríguez
  */
@@ -37,7 +37,7 @@ public class KalahPit {
     private final ArrayList<KalahStone> stones;
 
     /**
-     * Constructor
+     * Constructor uses game mode the add the initial stones
      *
      * @param mode the mode determines how many stones put initialy in the pit
      */
@@ -50,7 +50,7 @@ public class KalahPit {
     }
 
     /**
-     * Gets the amount of stones remaining in this pit
+     * Gets the amount of stones in this pit
      *
      * @return the number of stones
      */
@@ -68,7 +68,7 @@ public class KalahPit {
     }
 
     /**
-     * Take and removes the stones from the pit
+     * Takes and removes the stones from the pit. Creates a queue and returns it.
      *
      * @return all the stones as a LinkedList
      */

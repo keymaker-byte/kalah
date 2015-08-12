@@ -31,15 +31,15 @@ package com.zenilt.kalah;
 public enum KalahStatus {
 
     /**
-     * Game constructed but not playing yet
+     * Game was instantiated but not started yet
      */
     INIT,
     /**
-     * Player A is on turn
+     * Game started, Player A is on turn
      */
     PLAYINGA,
     /**
-     * Player B is on turn
+     * Game started, Player B is on turn
      */
     PLAYINGB,
     /**

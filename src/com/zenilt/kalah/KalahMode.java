@@ -25,7 +25,7 @@ package com.zenilt.kalah;
 
 /**
  *
- * Different modes for the game that changes the ammount of stones used per pit.
+ * Different modes for the game that change the ammount of stones used initially per pit.
  *
  * @author Juan Francisco Rodríguez
  */

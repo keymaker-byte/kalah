@@ -105,10 +105,10 @@ public class KalahGame {
     }
 
     /**
-     * Generates a move for the current player with all the stones at the choosen pit.
+     * Generates a move for the current player with all the stones in the choosen pit.
      *
      * @param pitIndex the index of the pit
-     * @throws KalahException if the game has not been started or is already finished
+     * @throws KalahException if the game has not been started or it's already finished
      * @throws KalahIlegalMoveException if the move is illegal, such as there are no stones in the selected pit, or the index is out of range
      */
     public void move(Integer pitIndex) throws KalahException, KalahIlegalMoveException {
@@ -135,7 +135,7 @@ public class KalahGame {
     }
 
     /**
-     * Get the player that won the match
+     * Gets the player that won the match
      *
      * @return the player that won the match, or null if there is a tie
      * @throws KalahException in case the game has not finished yet
@@ -192,7 +192,7 @@ public class KalahGame {
 	return move;
     }
 
-    public Boolean validMove(Integer pitIndex) {
+    private Boolean validMove(Integer pitIndex) {
 	if (pitIndex < 0 || pitIndex >= KalahGame.PITS) {
 	    return false;
 	}
