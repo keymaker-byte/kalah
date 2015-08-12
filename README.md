@@ -14,6 +14,11 @@ At every step the active player must decide the index of one of the 6 available 
 ```
 game.move(selectedIndex);
 ```
+You can get the current representation of each side of the board using the players' objects:
+```
+KalahPlayer playerA = game.getPlayerA();
+KalahPlayer playerB = game.getPlayerB();
+```
 Check the game status after every move, they can be:
 * INIT: instantiated but not started yet
 * PLAYINGA: player A turn
